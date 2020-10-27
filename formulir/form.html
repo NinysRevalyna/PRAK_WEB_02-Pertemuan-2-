@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset style="background-color: palevioletred; width: 100px;">
+        <legend style="font-size: 30px;">Formulir</legend>
+ 
+        <p>
+            <label>Nama Lengkap</label><br>
+            <input type="text" name="nama" value="" size="25">
+        </p>
+        <p>
+            <label>Jenis Kelamin</label><br>
+            <input type="radio" name="jk" value="l"/>Laki-laki
+            <input type="radio" name="jk" value="p"/>Perempuan
+        </p>
+        <p>
+            <label>Tempat Lahir</label><br>
+            <input type="text" name="tempat_lahir" value="" size="25">
+        </p>
+        <p>
+            <label>Tanggal Lahir</label><br>
+            <input type="date" name="tanggal_lahir">
+        </p>
+        <p>
+            <label>Alamat</label><br>
+            <textarea name="alamat"></textarea>
+        </p>
+        <p>
+            <label>Agama</label><br>
+            <select name="agama">
+                <option value="">--pilih--</option>
+                <option value="islam">Islam</option>
+                <option value="Protestan">Protestan</option>
+                <option value="katolik">Katolik</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="khonghucu">Khonghucu</option>
+            </select>
+        </p>
+        <p>
+            <label>Email</label><br>
+            <input type="email" name="email" placeholder="user@gmail.com">
+        </p>
+        <p>
+            <label>Password</label><br>
+            <input id="email" type="password" name="password" 
+            value="" autocomplete="off" placeholder="8-10 characters"/>
+        </p>
+        <p style="text-align: right;">
+            <button type="submit">Submit</button>
+        </p>
+        <p style="text-align: center; font-size: 13px;">Copyright © 2020 Ninys Revalyna</p>
+        </fieldset>
+    </form>
+</body>
+</html>
